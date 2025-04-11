@@ -48,3 +48,39 @@ header {
   background-color: #009acd;
 }
 
+.navbar ul {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #00bfff;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: #ffffff;
+}
+
+.content-section {
+  padding: 80px 20px;
+  text-align: center;
+  border-top: 1px solid #444;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+
+
