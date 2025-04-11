@@ -29,7 +29,7 @@ header {
 }
 
 .profile-pic:hover {
-  transform: scale(0.5);
+  transform: scale(0.8);
 }
 
 .resume-button {
