@@ -48,39 +48,80 @@ header {
   background-color: #009acd;
 }
 
-.navbar ul {
-  list-style-type: none;
-  display: flex;
-  gap: 20px;
-  justify-content: center;
+/* General Reset */
+* {
+  margin: 0;
   padding: 0;
-  margin-top: 10px;
-}
-
-.navbar a {
-  text-decoration: none;
-  color: #00bfff;
-  font-weight: bold;
-  transition: color 0.3s;
-}
-
-.navbar a:hover {
-  color: #ffffff;
-}
-
-.content-section {
-  padding: 80px 20px;
-  text-align: center;
-  border-top: 1px solid #444;
-  width: 100%;
-  max-width: 900px;
-  margin: 0 auto;
-}
-
-/* Smooth scrolling */
-html {
+  box-sizing: border-box;
   scroll-behavior: smooth;
 }
 
+/* Header & Navigation */
+header {
+  width: 100%;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #1e1e1e;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  position: relative;
+  padding-bottom: 4px;
+  transition: color 0.3s ease;
+}
+
+.nav-links a::after {
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: #00bfff;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+.nav-links a:hover {
+  color: #00bfff;
+}
+
+/* Section Styles */
+section {
+  padding: 80px 40px;
+  max-width: 900px;
+  margin: auto;
+}
+
+section h2 {
+  font-size: 32px;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #00bfff;
+  display: inline-block;
+}
+
+/* Intro section spacing */
+.intro {
+  text-align: center;
+  padding-top: 100px;
+}
 
 
