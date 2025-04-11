@@ -118,3 +118,85 @@ header {
   margin-bottom: 20px;
   color: #00bfff;
 }
+
+/* Education Section */
+.edu-card {
+  display: flex;
+  align-items: center;
+  background: #1f1f1f;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+  margin: 40px 0;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  opacity: 0;
+  transform: translateY(40px);
+}
+
+.edu-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 24px rgba(0,191,255,0.4);
+}
+
+.edu-logo {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  margin-right: 25px;
+  border-radius: 8px;
+  background-color: white;
+  padding: 8px;
+}
+
+.edu-info h3 {
+  font-size: 20px;
+  margin-bottom: 6px;
+  color: #00bfff;
+}
+
+.edu-info p {
+  margin: 4px 0;
+}
+
+.edu-info .highlight {
+  color: #ffd700;
+  font-weight: 600;
+}
+
+.edu-info .duration {
+  font-style: italic;
+  color: #aaa;
+  margin-top: 8px;
+}
+
+/* Transitions */
+.fade-in-left {
+  animation: fadeLeft 1.2s ease forwards;
+}
+
+.fade-in-right {
+  animation: fadeRight 1.2s ease forwards;
+  animation-delay: 0.3s;
+}
+
+@keyframes fadeLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeRight {
+  0% {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
