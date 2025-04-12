@@ -1,111 +1,123 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Work</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
-</head>
-<body>
-  <header>
-    <h1 class="logo">My Portfolio</h1>
-    <nav>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="education.html">Education</a></li>
-        <li><a href="experience.html">Work Experience</a></li>
-        <li><a href="projects.html">My Work</a></li>
-        <li><a href="activities.html">Activities Involved</a></li>
-        <li><a href="contact.html">Connect with Me</a></li>
-      </ul>
-    </nav>
-  </header>
+<section class="projects-container creative-grid">
+  <!-- Flip Card 1 -->
+  <div class="flip-card" onclick="openPopup('card1')">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <h3>🛠️ CNC Fixture</h3>
+        <p>Ashok Leyland</p>
+      </div>
+      <div class="flip-card-back">
+        <p>Click to explore</p>
+      </div>
+    </div>
+  </div>
 
-  <main class="projects-container creative-grid">
-    <!-- Flip Card 1 -->
-    <div class="flip-card" onclick="openPopup('card1')">
-      <div class="flip-card-inner">
-        <div class="flip-card-front">
-          <h3>🛠️ CNC Fixture</h3>
-          <p>Ashok Leyland</p>
-        </div>
-        <div class="flip-card-back">
-          <p>Click to explore</p>
+  <!-- Flip Card 2 -->
+  <div class="flip-card" onclick="openPopup('card2')">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <h3>⚙️ TDC Fixture</h3>
+        <p>Ashok Leyland</p>
+      </div>
+      <div class="flip-card-back">
+        <p>See design impact</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Flip Card 3 -->
+  <div class="flip-card" onclick="openPopup('card3')">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <h3>🏋️ Lifting Tackle</h3>
+        <p>Flywheel Housing</p>
+      </div>
+      <div class="flip-card-back">
+        <p>Topology optimized lifting</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Flip Card 4 -->
+  <div class="flip-card" onclick="openPopup('card4')">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <h3>🔄 Rotating Tool</h3>
+        <p>Flywheel | SAE 1</p>
+      </div>
+      <div class="flip-card-back">
+        <p>30% torque gain</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Backdrop -->
+  <div id="backdrop" class="backdrop" onclick="closePopup()"></div>
+
+  <!-- Popup 1: CNC Pivot Fixture -->
+  <!-- ... existing card1 ... -->
+
+  <!-- Popup 2: TDC Fixture -->
+  <!-- ... existing card2 ... -->
+
+  <!-- Popup 3: Lifting Tackle -->
+  <div id="card3" class="popup-card">
+    <div class="popup-header">
+      <h2>Flywheel Housing Lifting Tackle</h2>
+      <button onclick="closePopup()">&times;</button>
+    </div>
+    <div class="popup-body">
+      <div class="dual-image">
+        <img src="assets/lifting_tackle_1.jpg" alt="Lifting Tackle CAD" class="popup-img">
+        <img src="assets/lifting_tackle_2.jpg" alt="FEA Simulation" class="popup-img">
+      </div>
+      <div class="popup-info">
+        <ul>
+          <li><strong>Optimization:</strong> 20% weight reduction via topology optimization</li>
+          <li><strong>Load:</strong> Supports 500kg with safety factor of 2.5</li>
+          <li><strong>Simulation:</strong> FEA confirmed 30% stress reduction</li>
+          <li><strong>Compliance:</strong> ISO 12100 safety certified for production lines</li>
+        </ul>
+        <div class="popup-tags">
+          <span>FEA</span><span>Topology</span><span>500kg Load</span><span>Safety Factor</span><span>ISO 12100</span>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- Flip Card 2 -->
-    <div class="flip-card" onclick="openPopup('card2')">
-      <div class="flip-card-inner">
-        <div class="flip-card-front">
-          <h3>⚙️ TDC Fixture</h3>
-          <p>Ashok Leyland</p>
-        </div>
-        <div class="flip-card-back">
-          <p>See design impact</p>
+  <!-- Popup 4: Rotating Tool -->
+  <div id="card4" class="popup-card">
+    <div class="popup-header">
+      <h2>Flywheel Rotating Tool</h2>
+      <button onclick="closePopup()">&times;</button>
+    </div>
+    <div class="popup-body">
+      <div class="dual-image">
+        <img src="assets/rotating_tool_1.jpg" alt="Rotating Tool CAD" class="popup-img">
+        <img src="assets/rotating_tool_2.jpg" alt="Gear & Bearing Design" class="popup-img">
+      </div>
+      <div class="popup-info">
+        <ul>
+          <li><strong>Design:</strong> Gear shaft inside high-strength alloy casing</li>
+          <li><strong>Support:</strong> Dual ball bearings (ISO 492, ABEC 5)</li>
+          <li><strong>Efficiency:</strong> Improved torque by 30%, lifespan by 40%</li>
+          <li><strong>Standard:</strong> SAE J617 compliant with marine engine mounts</li>
+        </ul>
+        <div class="popup-tags">
+          <span>Gear Design</span><span>Ball Bearings</span><span>Torque</span><span>Durability</span><span>SAE J617</span>
         </div>
       </div>
     </div>
+  </div>
+</section>
 
-    <!-- Backdrop -->
-    <div id="backdrop" class="backdrop" onclick="closePopup()"></div>
-
-    <!-- Expanded Popup 1 -->
-    <div id="card1" class="popup-card">
-      <div class="popup-header">
-        <h2>CNC Pivot Fixture</h2>
-        <button onclick="closePopup()">&times;</button>
-      </div>
-      <div class="popup-body">
-        <img src="assets/pivot_fixture.jpg" alt="CNC Fixture" class="popup-img">
-        <div class="popup-info">
-          <ul>
-            <li><strong>Goal:</strong> Reduce CNC setup time using SMED strategy</li>
-            <li><strong>Design:</strong> Rigid base + modular clamping for thermostats</li>
-            <li><strong>Outcome:</strong> Setup time dropped from 12 → <strong>3 minutes</strong></li>
-            <li><strong>Deliverables:</strong> CAD models, SOPs, live operator trials</li>
-          </ul>
-          <div class="popup-tags">
-            <span>SMED</span><span>Lean</span><span>3D CAD</span><span>SOP</span>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Expanded Popup 2 -->
-    <div id="card2" class="popup-card">
-      <div class="popup-header">
-        <h2>TDC Marking Fixture</h2>
-        <button onclick="closePopup()">&times;</button>
-      </div>
-      <div class="popup-body">
-        <img src="assets/tdc_fixture_3d.jpg" alt="3D CAD" class="popup-img">
-        <div class="popup-info">
-          <ul>
-            <li><strong>Purpose:</strong> Ensure accurate TDC on flywheels</li>
-            <li><strong>System:</strong> Bore-centered locator design with pins/holes</li>
-            <li><strong>Precision:</strong> Created 2D GD&T for tolerance & repeatability</li>
-            <li><strong>Impact:</strong> Boosted marking accuracy to 99.5%</li>
-          </ul>
-          <div class="popup-tags">
-            <span>GD&T</span><span>3D CAD</span><span>Precision</span><span>Repeatability</span><span>Manufacturing</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </main>
-
-  <script>
-    function openPopup(id) {
-      document.getElementById(id).classList.add('active');
-      document.getElementById('backdrop').classList.add('active');
-    }
-    function closePopup() {
-      document.querySelectorAll('.popup-card').forEach(el => el.classList.remove('active'));
-      document.getElementById('backdrop').classList.remove('active');
-    }
-  </script>
-</body>
-</html>
+<script>
+  function openPopup(id) {
+    document.getElementById(id).classList.add('active');
+    document.getElementById('backdrop').classList.add('active');
+  }
+  function closePopup() {
+    document.querySelectorAll('.popup-card').forEach(el => el.classList.remove('active'));
+    document.getElementById('backdrop').classList.remove('active');
+  }
+</script>
