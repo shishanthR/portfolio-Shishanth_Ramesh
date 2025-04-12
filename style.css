@@ -1,31 +1,31 @@
-/* Global Reset */
+/* === GLOBAL RESET === */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Font & Background */
+/* === BASE STYLES === */
 body {
   font-family: 'Inter', sans-serif;
-  background: linear-gradient(135deg, #f0f4f8, #e6efff);
-  color: #1a1a1a;
+  background-color: #121212;
+  color: #ffffff;
   min-height: 100vh;
   overflow-x: hidden;
 }
 
-/* Header Styling */
+/* === HEADER === */
 header {
   width: 100%;
   padding: 20px 40px;
-  background: #ffffff;
+  background: #1e1e1e;
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: sticky;
   top: 0;
   z-index: 1000;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.5);
 }
 
 .logo {
@@ -41,7 +41,7 @@ header {
 }
 
 .nav-links a {
-  color: #1a1a1a;
+  color: #ffffff;
   text-decoration: none;
   font-weight: 600;
   position: relative;
@@ -68,33 +68,137 @@ header {
   color: #00bfff;
 }
 
-/* Section Background Fixes */
-.intro,
-.page,
-.projects-container.creative-grid,
-.contact-section {
-  background: transparent;
-  background-color: transparent;
+/* === INTRO / HOME SECTION === */
+.intro {
+  text-align: center;
+  padding: 100px 20px;
+  max-width: 800px;
+  margin: auto;
 }
 
-/* Card Background Adjustments */
-.edu-card,
-.card-front,
-.card-back,
-.popup-card,
-.contact-container {
-  background-color: #ffffff !important;
-  color: #1a1a1a;
+.profile-pic {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #00bfff;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease-in-out;
 }
 
-.popup-info ul,
-.popup-tags span {
-  color: #1a1a1a;
+.profile-pic:hover {
+  transform: scale(1.05);
 }
 
-.exp-card .card-front,
-.exp-card .card-back {
-  background-color: #ffffff;
-  color: #1a1a1a;
-  border: 1px solid #ddd;
+.resume-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 25px;
+  background-color: #00bfff;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
 }
+
+.resume-button:hover {
+  background-color: #009acd;
+}
+
+/* === PAGE LAYOUT === */
+.page {
+  padding: 100px 40px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.page h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #00bfff;
+}
+
+/* === EDUCATION SECTION === */
+.edu-card {
+  display: flex;
+  align-items: center;
+  background: #1f1f1f;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+  margin: 40px 0;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  opacity: 0;
+  transform: translateY(40px);
+}
+
+.edu-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 24px rgba(0,191,255,0.4);
+}
+
+.edu-logo {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  margin-right: 25px;
+  border-radius: 8px;
+  background-color: white;
+  padding: 8px;
+}
+
+.edu-info h3 {
+  font-size: 20px;
+  margin-bottom: 6px;
+  color: #00bfff;
+}
+
+.edu-info p {
+  margin: 4px 0;
+}
+
+.edu-info .highlight {
+  color: #ffd700;
+  font-weight: 600;
+}
+
+.edu-info .duration {
+  font-style: italic;
+  color: #aaa;
+  margin-top: 8px;
+}
+
+/* === ANIMATIONS === */
+.fade-in-left {
+  animation: fadeLeft 1.2s ease forwards;
+}
+
+.fade-in-right {
+  animation: fadeRight 1.2s ease forwards;
+  animation-delay: 0.3s;
+}
+
+@keyframes fadeLeft {
+  0% { opacity: 0; transform: translateX(-50px); }
+  100% { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes fadeRight {
+  0% { opacity: 0; transform: translateX(50px); }
+  100% { opacity: 1; transform: translateX(0); }
+}
+
+/* === EXPERIENCE GRID === */
+.exp-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+/* === FLIP CARD + POPUP PROJECTS === */
+/* Include all your .flip-card, .popup-card, .popup-header, .popup-body, .popup-img, .popup-info, .popup-tags, .backdrop, and popup animations here exactly as you had */
+
+/* === CONTACT FORM === */
+/* Include your .contact-section, .contact-container, .contact-form, .form-group, .submit-btn, .social-link, and animations here exactly as written */
