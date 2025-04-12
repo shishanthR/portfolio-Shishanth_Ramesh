@@ -23,63 +23,59 @@
   </header>
 
   <main class="projects-container">
-    <section class="projects-container">
-  <!-- Pocket Cards -->
-  <div class="pocket-card" onclick="showCard('card1')"></div>
-  <div class="pocket-card" onclick="showCard('card2')"></div>
+    <!-- Pocket Cards -->
+    <div class="pocket-card" onclick="showCard('card1')"></div>
+    <div class="pocket-card" onclick="showCard('card2')"></div>
 
-  <!-- Backdrop -->
-  <div id="backdrop" class="backdrop" onclick="closeCard()"></div>
+    <!-- Expanded Cards -->
+    <div id="backdrop" class="backdrop" onclick="closeCard()"></div>
 
-  <!-- Expanded Card 1 -->
-  <div id="card1" class="expanded-card">
-    <div class="expanded-header">
-      <h2>CNC Pivot Fixture</h2>
-      <button class="close-btn" onclick="closeCard()">&times;</button>
-    </div>
-    <div class="expanded-body">
-      <ul>
-        <li>Designed multi-angle CNC fixture to machine thermostat housings with precision.</li>
-        <li>Applied <strong>SMED</strong> to reduce changeover time from 12 to 3 minutes.</li>
-        <li>Engineered high-rigidity base for reliable clamping under tool load.</li>
-        <li>Developed SOPs for consistent application across cells.</li>
-      </ul>
-      <div class="expanded-tags">
-        <span>SMED</span><span>Lean Manufacturing</span><span>CAD</span><span>Process Optimization</span><span>SOP</span>
+    <div id="card1" class="expanded-card">
+      <div class="expanded-header">
+        <h2>CNC Pivot Fixture</h2>
+        <button class="close-btn" onclick="closeCard()">&times;</button>
+      </div>
+      <div class="expanded-body">
+        <ul>
+          <li>Designed multi-angle CNC fixture to machine thermostat housings with precision.</li>
+          <li>Applied <strong>SMED</strong> to reduce changeover time from 12 to 3 minutes.</li>
+          <li>Engineered high-rigidity base for reliable clamping under tool load.</li>
+          <li>Developed SOPs for consistent application across cells.</li>
+        </ul>
+        <div class="expanded-tags">
+          <span>SMED</span><span>Lean Manufacturing</span><span>CAD</span><span>Process Optimization</span><span>SOP</span>
+        </div>
       </div>
     </div>
-  </div>
 
-  <!-- Expanded Card 2 -->
-  <div id="card2" class="expanded-card">
-    <div class="expanded-header">
-      <h2>TDC Marking Fixture</h2>
-      <button class="close-btn" onclick="closeCard()">&times;</button>
-    </div>
-    <div class="expanded-body">
-      <ul>
-        <li>Created a stable circular fixture with locator pins for TDC marking on flywheel.</li>
-        <li>Designed using 3D CAD with complete 2D GD&T specifications.</li>
-        <li>Ensured consistency, repeatability, and precision in marking process.</li>
-      </ul>
-      <div class="expanded-tags">
-        <span>CAD</span><span>GD&T</span><span>Precision Fixture</span><span>Repeatability</span><span>Manufacturing</span>
+    <div id="card2" class="expanded-card">
+      <div class="expanded-header">
+        <h2>TDC Marking Fixture</h2>
+        <button class="close-btn" onclick="closeCard()">&times;</button>
+      </div>
+      <div class="expanded-body">
+        <ul>
+          <li>Created a stable circular fixture with locator pins for TDC marking on flywheel.</li>
+          <li>Designed using 3D CAD with complete 2D GD&T specifications.</li>
+          <li>Ensured consistency, repeatability, and precision in marking process.</li>
+        </ul>
+        <div class="expanded-tags">
+          <span>CAD</span><span>GD&T</span><span>Precision Fixture</span><span>Repeatability</span><span>Manufacturing</span>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </main>
 
-<script>
-  function showCard(id) {
-    document.getElementById(id).classList.add("active");
-    document.getElementById("backdrop").classList.add("active");
-  }
+  <script>
+    function showCard(id) {
+      document.getElementById(id).classList.add("active");
+      document.getElementById("backdrop").classList.add("active");
+    }
 
-  function closeCard() {
-    document.querySelectorAll(".expanded-card").forEach(card => card.classList.remove("active"));
-    document.getElementById("backdrop").classList.remove("active");
-  }
-</script>
-
+    function closeCard() {
+      document.querySelectorAll(".expanded-card").forEach(card => card.classList.remove("active"));
+      document.getElementById("backdrop").classList.remove("active");
+    }
+  </script>
 </body>
 </html>
