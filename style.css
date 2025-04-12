@@ -68,104 +68,33 @@ header {
   color: #00bfff;
 }
 
-/* Intro/Home Page */
-.intro {
-  text-align: center;
-  padding: 100px 20px;
-  max-width: 800px;
-  margin: auto;
+/* Section Background Fixes */
+.intro,
+.page,
+.projects-container.creative-grid,
+.contact-section {
+  background: transparent;
+  background-color: transparent;
 }
 
-.profile-pic {
-  width: 180px;
-  height: 180px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 3px solid #00bfff;
-  margin-bottom: 20px;
-  transition: transform 0.3s ease-in-out;
+/* Card Background Adjustments */
+.edu-card,
+.card-front,
+.card-back,
+.popup-card,
+.contact-container {
+  background-color: #ffffff !important;
+  color: #1a1a1a;
 }
 
-.profile-pic:hover {
-  transform: scale(1.05);
+.popup-info ul,
+.popup-tags span {
+  color: #1a1a1a;
 }
 
-.resume-button {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 10px 25px;
-  background-color: #00bfff;
-  color: #fff;
-  text-decoration: none;
-  font-weight: 600;
-  border-radius: 8px;
-  transition: background-color 0.3s ease;
-}
-
-.resume-button:hover {
-  background-color: #009acd;
-}
-
-/* Section Page Layouts */
-.page {
-  padding: 100px 40px;
-  max-width: 900px;
-  margin: auto;
-}
-
-.page h2 {
-  font-size: 32px;
-  margin-bottom: 20px;
-  color: #00bfff;
-}
-
-/* Education Section */
-.edu-card {
-  display: flex;
-  align-items: center;
-  background: #ffffff;
-  padding: 20px;
-  border-radius: 16px;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-  margin: 40px 0;
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
-  opacity: 0;
-  transform: translateY(40px);
-}
-
-.edu-card:hover {
-  transform: scale(1.02);
-  box-shadow: 0 6px 24px rgba(0,191,255,0.4);
-}
-
-.edu-logo {
-  width: 100px;
-  height: 100px;
-  object-fit: contain;
-  margin-right: 25px;
-  border-radius: 8px;
-  background-color: white;
-  padding: 8px;
-}
-
-.edu-info h3 {
-  font-size: 20px;
-  margin-bottom: 6px;
-  color: #00bfff;
-}
-
-.edu-info p {
-  margin: 4px 0;
-  color: #333;
-}
-
-.edu-info .highlight {
-  color: #ffd700;
-  font-weight: 600;
-}
-
-.edu-info .duration {
-  font-style: italic;
-  color: #666;
-  margin-top: 8px;
+.exp-card .card-front,
+.exp-card .card-back {
+  background-color: #ffffff;
+  color: #1a1a1a;
+  border: 1px solid #ddd;
 }
