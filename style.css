@@ -260,98 +260,100 @@ header {
   transform: rotateY(360deg);
 }
 
-/* Work Section */
-.work-section {
-  background: #ffffff;
-  color: #1a1a1a;
+/* Ashok Section */
+.ashok-section {
+  background-color: #f9f9f9;
   padding: 80px 20px;
-  border-top: 5px solid #0047ab;
+  color: #1a1a1a;
 }
 
-.work-header {
+.ashok-header {
   text-align: center;
   margin-bottom: 40px;
 }
 
-.company-logo {
-  height: 60px;
+.ashok-logo {
+  width: 60px;
   margin-bottom: 10px;
 }
 
-.work-header h2 {
+.ashok-header h2 {
   font-size: 28px;
   color: #0047ab;
-}
-
-.position {
-  font-size: 15px;
-  color: #555;
-}
-
-.work-grid {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  gap: 50px;
-  align-items: start;
-}
-
-.work-stats {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-}
-
-.stat-block {
-  background: #f5f5f5;
-  border-left: 5px solid #3cb371;
-  padding: 20px;
-  border-radius: 8px;
-  text-align: left;
-}
-
-.stat-block h3 {
-  font-size: 24px;
   margin-bottom: 5px;
-  color: #1a1a1a;
 }
 
-.stat-block p {
-  color: #555;
+.ashok-role {
   font-size: 14px;
+  color: #555;
 }
 
-.work-content {
+.ashok-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.ashok-stats {
+  flex: 1;
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
-.work-image {
+.ashok-stat {
+  background: #ffffff;
+  border-left: 4px solid #0047ab;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  text-align: left;
+}
+
+.ashok-stat h3 {
+  margin: 0;
+  font-size: 24px;
+  color: #0047ab;
+}
+
+.ashok-stat p {
+  margin: 4px 0 0;
+  color: #555;
+  font-size: 14px;
+}
+
+.ashok-details {
+  flex: 2;
+  max-width: 600px;
+}
+
+.ashok-image {
   width: 100%;
-  max-height: 280px;
-  object-fit: cover;
-  border-radius: 12px;
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
 }
 
-.work-points {
-  list-style: disc;
+.ashok-points {
+  list-style-type: disc;
   padding-left: 20px;
-  line-height: 1.7;
+  margin-bottom: 16px;
+}
+
+.ashok-points li {
   font-size: 15px;
-  color: #333;
+  line-height: 1.6;
+  margin-bottom: 8px;
 }
 
-.skill-badges {
-  margin-top: 15px;
-}
-
-.skill-badges span {
+.ashok-skills span {
   display: inline-block;
-  background: #0047ab;
+  background-color: #0047ab;
   color: #fff;
   padding: 6px 14px;
-  margin: 6px 8px 0 0;
+  margin: 4px 6px 0 0;
   border-radius: 20px;
   font-size: 13px;
   font-weight: 600;
