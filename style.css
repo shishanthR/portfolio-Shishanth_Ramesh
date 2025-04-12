@@ -260,87 +260,95 @@ header {
   transform: rotateY(360deg);
 }
 
-/* Projects Page */
-.work-title {
-  font-size: 32px;
-  color: #00bfff;
-  margin-bottom: 40px;
-  text-align: center;
-  animation: slideUp 1s ease-out;
+/* Glassmorphism Container */
+.glass-card-container {
+  padding: 60px 20px;
+  background: #0f0f1a;
 }
 
-.project-card {
-  display: flex;
-  flex-direction: row;
-  gap: 40px;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 80px;
-  transform: translateY(50px);
+.glass-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  padding: 40px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 25px rgba(0, 255, 213, 0.3);
+  transition: transform 0.6s ease, opacity 0.6s ease;
+  animation: splitReveal 1.4s ease forwards;
   opacity: 0;
-  animation: fadeInUp 1.2s ease forwards;
+  transform: scale(0.95);
 }
 
-.project-image-container {
-  flex: 1;
+.glass-card:hover {
+  transform: scale(1.01);
+  box-shadow: 0 0 35px rgba(255, 94, 194, 0.4);
 }
 
-.project-img {
-  width: 100%;
-  max-width: 400px;
-  border-radius: 16px;
-  box-shadow: 0 10px 30px rgba(0,191,255,0.3);
-  transition: transform 0.4s ease;
-}
-
-.project-img:hover {
-  transform: scale(1.05);
-}
-
-.project-details {
-  flex: 2;
-  animation: fadeIn 1.5s ease;
-}
-
-.project-details h3 {
+.glass-header h2 {
   font-size: 26px;
-  margin-bottom: 10px;
-  color: #ffd700;
+  color: #00ffd5;
+  margin-bottom: 5px;
 }
 
-.project-details .description {
-  margin-bottom: 12px;
-  color: #ccc;
+.sub-title {
+  color: #888;
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+.glass-body {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.glass-img {
+  flex: 1 1 300px;
+  max-width: 350px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0,255,213,0.3);
+}
+
+.glass-text {
+  flex: 2 1 400px;
+  color: #d1d1d1;
+  font-size: 16px;
   line-height: 1.6;
 }
 
-.skill-tags {
-  margin-top: 16px;
-}
-
-.skill-tags span {
-  background-color: #00bfff;
-  color: #000;
-  padding: 6px 12px;
-  margin: 5px;
-  border-radius: 20px;
-  font-size: 14px;
+.glass-text .highlight {
+  color: #ff5ec2;
   font-weight: 600;
+}
+
+.glass-skills {
+  margin-top: 20px;
+}
+
+.glass-skills span {
   display: inline-block;
+  background: linear-gradient(45deg, #00ffd5, #ff5ec2);
+  color: #000;
+  padding: 8px 14px;
+  margin: 5px 7px 0 0;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 13px;
 }
 
-/* Animations */
-@keyframes slideUp {
-  from { transform: translateY(30px); opacity: 0; }
-  to { transform: translateY(0); opacity: 1; }
-}
-
-@keyframes fadeInUp {
-  from { opacity: 0; transform: translateY(60px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
+/* Unique Animation */
+@keyframes splitReveal {
+  0% {
+    transform: scaleY(0) scaleX(0.95);
+    transform-origin: center top;
+    opacity: 0;
+  }
+  50% {
+    transform: scaleY(1.05) scaleX(1);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scaleY(1) scaleX(1);
+    opacity: 1;
+  }
 }
