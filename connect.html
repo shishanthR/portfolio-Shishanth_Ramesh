@@ -22,9 +22,35 @@
     </nav>
   </header>
 
-  <main class="page">
-    <h2>Education</h2>
-    <p>Details will be added here...</p>
-  </main>
+  <section class="contact-section">
+  <div class="contact-container">
+    <h2 class="contact-title">Let's Connect</h2>
+    <form id="contactForm" class="contact-form" action="https://formsubmit.co/youremail@example.com" method="POST">
+      <!-- Replace youremail@example.com with your actual email -->
+
+      <!-- Disable Captcha & Redirection -->
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_template" value="box">
+      <input type="hidden" name="_next" value="https://yourdomain.com/thankyou.html">
+
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required placeholder="Your full name" />
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required placeholder="your@email.com" />
+      </div>
+
+      <button type="submit" class="submit-btn">Send Message 🚀</button>
+    </form>
+
+    <div class="social-link">
+      <p>Or reach me on <a href="https://www.linkedin.com/in/shishanthr/" target="_blank">LinkedIn ↗</a></p>
+    </div>
+  </div>
+</section>
+
 </body>
 </html>

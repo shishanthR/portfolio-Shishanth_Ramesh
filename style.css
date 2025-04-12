@@ -429,3 +429,111 @@ header {
   opacity: 1;
   pointer-events: all;
 }
+
+/* === CONTACT FORM STYLES === */
+.contact-section {
+  background: linear-gradient(135deg, #f0f4f8, #e6efff);
+  padding: 80px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeSlideIn 1.2s ease-in-out;
+}
+
+.contact-container {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 40px;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0 8px 30px rgba(0, 71, 171, 0.2);
+  animation: popIn 1.2s ease forwards;
+}
+
+.contact-title {
+  text-align: center;
+  font-size: 26px;
+  color: #0047ab;
+  margin-bottom: 30px;
+}
+
+.contact-form .form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.contact-form label {
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 6px;
+}
+
+.contact-form input {
+  padding: 12px 14px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.contact-form input:focus {
+  border-color: #0047ab;
+  box-shadow: 0 0 5px rgba(0, 71, 171, 0.3);
+  outline: none;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 12px 0;
+  background: #0047ab;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.submit-btn:hover {
+  background: #00306f;
+}
+
+.social-link {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.social-link a {
+  color: #0047ab;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.social-link a:hover {
+  color: #002654;
+}
+
+/* === Animations === */
+@keyframes fadeSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes popIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
