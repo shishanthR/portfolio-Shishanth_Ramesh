@@ -6,6 +6,14 @@
   <title>My Work</title>
   <link rel="stylesheet" href="style.css"/>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet"/>
+
+  <!-- AOS Animation Library CDN -->
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
 </head>
 <body>
   <header>
@@ -26,35 +34,50 @@
 
     <h2 id="ashokleyland" class="work-title">Ashok Leyland – CNC Pivot Fixtures</h2>
 
-    <section id="ashokleyland" class="glass-card-container">
+    <section id="ashokleyland" class="work-section">
+  <div class="work-header">
+    <img src="assets/ashok_logo.png" alt="Ashok Leyland Logo" class="company-logo" />
+    <h2>CNC Pivot Fixtures – Ashok Leyland</h2>
+    <p class="position">Production Engineering Intern <span>| Mar 2021 – May 2021</span></p>
+  </div>
 
-  <div class="glass-card">
-    <div class="glass-header">
-      <h2>Ashok Leyland – CNC Pivot Fixtures</h2>
-      <p class="sub-title">Production Engineering Intern | Mar 2021 – May 2021</p>
+  <div class="work-grid" data-aos="fade-up" data-aos-duration="1200">
+    <div class="work-stats">
+      <div class="stat-block">
+        <h3>4x</h3>
+        <p>Improved Setup Speed (12 → 3 mins)</p>
+      </div>
+      <div class="stat-block">
+        <h3>100%</h3>
+        <p>Fixture Repeatability & Accuracy</p>
+      </div>
+      <div class="stat-block">
+        <h3>SMED</h3>
+        <p>Lean Principle Used</p>
+      </div>
     </div>
 
-    <div class="glass-body">
-      <img src="assets/pivot_fixture.jpg" alt="CNC Pivot Fixture" class="glass-img" />
+    <div class="work-content">
+      <img src="assets/pivot_fixture.jpg" alt="CNC Fixture" class="work-image" />
+      <ul class="work-points">
+        <li>Designed a high-rigidity multi-angle CNC fixture using CAD for complex machining operations.</li>
+        <li>Implemented <strong>Single-Minute Exchange of Dies (SMED)</strong> to reduce changeover time from 12 to 3 minutes.</li>
+        <li>Engineered a modular clamping mechanism to sustain aggressive tool forces without deformation.</li>
+        <li>Developed and rolled out SOPs across assembly stations for standardized implementation.</li>
+        <li>Collaborated with operators and senior engineers for validation and real-world testing.</li>
+      </ul>
 
-      <div class="glass-text">
-        <p><strong>Designed & implemented pivot fixtures</strong> to enable operations at multiple angles, drastically increasing machining flexibility and cutting <span class="highlight">setup time from 12 to 3 minutes</span> using <strong>SMED principles</strong>.</p>
-
-        <p>Developed a <strong>high-rigidity base and clamping system</strong> optimized for CNC operations under intense cutting forces — improving accuracy and production repeatability.</p>
-
-        <p>Created standardized <strong>SOPs</strong> for deployment across the manufacturing line.</p>
-
-        <div class="glass-skills">
-          <span>SMED</span>
-          <span>Fixture Design</span>
-          <span>Mechanical CAD</span>
-          <span>Manufacturing Engineering</span>
-          <span>Process Optimization</span>
-        </div>
+      <div class="skill-badges">
+        <span>CAD Design</span>
+        <span>SMED</span>
+        <span>Lean Manufacturing</span>
+        <span>Fixture Engineering</span>
+        <span>SOP Documentation</span>
       </div>
     </div>
   </div>
 </section>
+
 
 
   </main>
