@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Education</title>
+  <title>Work Experience</title>
   <link rel="stylesheet" href="style.css"/>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet"/>
 </head>
@@ -12,7 +12,7 @@
     <h1 class="logo">My Portfolio</h1>
     <nav>
       <ul class="nav-links">
-	<li><a href="index.html">Home</a></li>
+        <li><a href="index.html">Home</a></li>
         <li><a href="education.html">Education</a></li>
         <li><a href="experience.html">Work Experience</a></li>
         <li><a href="projects.html">My Work</a></li>
@@ -23,8 +23,47 @@
   </header>
 
   <main class="page">
-    <h2>Education</h2>
-    <p>Details will be added here...</p>
+    <h2>Work Experience</h2>
+
+    <div class="exp-grid">
+
+      <div class="exp-card" onclick="location.href='projects.html#accenture';">
+        <div class="card-front">
+          <img src="assets/accenture.png" alt="Accenture Logo" />
+          <h3>Accenture, Bengaluru</h3>
+          <p>Packaged App Dev Associate</p>
+        </div>
+        <div class="card-back">
+          <p>Oct 2022 – Jul 2024</p>
+          <p>Click to explore projects</p>
+        </div>
+      </div>
+
+      <div class="exp-card" onclick="location.href='projects.html#ashokleyland';">
+        <div class="card-front">
+          <img src="assets/ashokleyland.png" alt="Ashok Leyland Logo" />
+          <h3>Ashok Leyland, Hosur</h3>
+          <p>Production Engineering Intern</p>
+        </div>
+        <div class="card-back">
+          <p>Mar 2021 – May 2021</p>
+          <p>Click to view work</p>
+        </div>
+      </div>
+
+      <div class="exp-card" onclick="location.href='projects.html#psginstitute';">
+        <div class="card-front">
+          <img src="assets/psg_institute.png" alt="PSG Logo" />
+          <h3>PSG Industrial Institute</h3>
+          <p>Industrial Engineering Intern</p>
+        </div>
+        <div class="card-back">
+          <p>Aug 2017 – May 2020</p>
+          <p>Click for details</p>
+        </div>
+      </div>
+
+    </div>
   </main>
 </body>
 </html>
