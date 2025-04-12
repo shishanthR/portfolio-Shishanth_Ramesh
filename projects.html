@@ -6,15 +6,7 @@
   <title>My Work</title>
   <link rel="stylesheet" href="style.css"/>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet"/>
-
-<!-- AOS Animation Library -->
-<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
-
 </head>
-<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-<script>
-  AOS.init();
-</script>
 <body>
   <header>
     <h1 class="logo">My Portfolio</h1>
@@ -34,49 +26,53 @@
 
     <h2 id="ashokleyland" class="work-title">Ashok Leyland – CNC Pivot Fixtures</h2>
 
-    <section id="ashokleyland" class="ashok-section">
-  <div class="ashok-header" data-aos="fade-down">
-    <img src="assets/ashok_logo.png" alt="Ashok Leyland" class="ashok-logo">
+    <section id="ashokleyland" class="work-section">
+  <div class="section-header">
+    <img src="assets/ashok_logo.png" alt="Ashok Leyland Logo" class="company-logo" />
     <h2>CNC Pivot Fixtures – Ashok Leyland</h2>
-    <p class="ashok-role">Production Engineering Intern | Mar 2021 – May 2021</p>
+    <p class="position">Production Engineering Intern <span>| Mar 2021 – May 2021</span></p>
   </div>
 
-  <div class="ashok-grid" data-aos="fade-up" data-aos-delay="200">
-    <div class="ashok-stats">
-      <div class="ashok-stat">
-        <h3>4x</h3>
-        <p>Faster Setup Time</p>
-      </div>
-      <div class="ashok-stat">
-        <h3>100%</h3>
-        <p>Fixture Accuracy & Repeatability</p>
-      </div>
-      <div class="ashok-stat">
-        <h3>SMED</h3>
-        <p>Lean Method Applied</p>
+  <div class="work-layout">
+    <div class="summary-card">
+      <img src="assets/pivot_fixture.jpg" alt="Pivot Fixture" class="summary-img" />
+      <div class="summary-metrics">
+        <div class="metric">
+          <h3>75%</h3>
+          <p>Changeover Time Reduced</p>
+        </div>
+        <div class="metric">
+          <h3>3 mins</h3>
+          <p>New Setup Time</p>
+        </div>
+        <div class="metric">
+          <h3>4x</h3>
+          <p>Fixture Efficiency</p>
+        </div>
       </div>
     </div>
 
-    <div class="ashok-details">
-      <img src="assets/pivot_fixture.jpg" alt="Pivot Fixture" class="ashok-image">
-      <ul class="ashok-points">
-        <li>Designed multi-angle CNC fixture with quick-clamp mechanism for flexible operations.</li>
-        <li>Implemented <strong>SMED</strong> to reduce changeover from 12 mins to 3 mins.</li>
-        <li>Engineered base with high rigidity to withstand cutting forces, ensuring repeatability.</li>
-        <li>Authored SOPs for deployment across manufacturing cells.</li>
-        <li>Collaborated with operators to test and validate fixture reliability.</li>
+    <div class="details-card">
+      <div class="vertical-accent"></div>
+      <ul class="details-list">
+        <li>Designed high-rigidity CNC pivot fixture with angle flexibility for thermostat housings.</li>
+        <li>Applied SMED principles to reduce changeover time from 12 mins to just 3 mins.</li>
+        <li>Engineered modular base and clamping system to withstand aggressive cutting forces.</li>
+        <li>Created detailed SOPs and documentation for standardization across cells.</li>
+        <li>Collaborated with operators for real-world testing and continuous improvements.</li>
       </ul>
-      <div class="ashok-skills">
-        <span>CAD</span>
-        <span>Lean Manufacturing</span>
-        <span>Fixture Design</span>
-        <span>Process Optimization</span>
+
+      <div class="skill-tags">
         <span>SMED</span>
-        <span>SOP Writing</span>
+        <span>Lean Engineering</span>
+        <span>Fixture Design</span>
+        <span>CAD Modeling</span>
+        <span>Standard Work</span>
       </div>
     </div>
   </div>
 </section>
+
 
   </main>
 </body>
