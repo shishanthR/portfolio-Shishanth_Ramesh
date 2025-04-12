@@ -260,99 +260,103 @@ header {
   transform: rotateY(360deg);
 }
 
-/* --- Project Section Specific CSS --- */
+/* --- Project Section CSS: Expandable Cards --- */
 
 .projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
   padding: 60px 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 60px;
-  max-width: 1000px;
+  max-width: 1200px;
   margin: auto;
 }
 
 .project-card {
-  background: white;
+  background: linear-gradient(135deg, #002f6c, #0059b3);
+  color: #fff;
   border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
   overflow: hidden;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-  transform: translateY(50px);
-  opacity: 0;
-  transition: all 0.6s ease;
+  cursor: pointer;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  position: relative;
 }
 
-.project-card.active {
-  transform: translateY(0);
-  opacity: 1;
+.project-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 40px rgba(0, 0, 0, 0.3);
+}
+
+.project-card.collapsed {
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.project-card.expanded {
+  height: auto;
+  padding: 0;
+  display: block;
+  animation: expandIn 0.5s ease forwards;
+}
+
+@keyframes expandIn {
+  0% {
+    opacity: 0;
+    transform: scaleY(0.95) translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: scaleY(1) translateY(0);
+  }
 }
 
 .project-banner {
-  position: relative;
-  overflow: hidden;
-}
-
-.banner-img,
-.dual-img {
   width: 100%;
-  height: auto;
-  display: block;
+  height: 180px;
   object-fit: cover;
-}
-
-.project-banner.dual {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  padding: 10px;
-  background: #eef2f6;
-}
-
-.dual-img {
-  flex: 1 1 48%;
-  max-height: 200px;
-  border-radius: 8px;
-  transition: transform 0.3s ease;
-}
-
-.dual-img:hover {
-  transform: scale(1.03);
-}
-
-.banner-overlay {
-  position: absolute;
-  bottom: 10px;
-  left: 20px;
-  background: rgba(0, 71, 171, 0.85);
-  color: white;
-  padding: 10px 20px;
-  border-radius: 6px;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
 }
 
 .project-details {
-  padding: 30px;
+  padding: 20px;
+  background: #ffffff;
+  color: #222;
+  animation: fadeInDetails 0.6s ease forwards;
+}
+
+@keyframes fadeInDetails {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
 }
 
 .project-details ul {
   padding-left: 20px;
-  margin-bottom: 20px;
+  margin: 15px 0;
   line-height: 1.6;
 }
 
 .project-tags {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 8px;
+  margin-top: 10px;
 }
 
 .project-tags span {
   background: #0047ab;
-  color: white;
-  padding: 6px 12px;
+  color: #fff;
+  padding: 5px 12px;
   border-radius: 20px;
-  font-size: 13px;
-  font-weight: 600;
+  font-size: 12px;
+  font-weight: 500;
+  transition: background 0.3s;
 }
 
-.project-card.alt {
-  background: #f0f4f9;
+.project-tags span:hover {
+  background: #003370;
 }
