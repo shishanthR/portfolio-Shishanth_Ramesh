@@ -74,7 +74,70 @@
       </div>
     </div>
   </div>
+<!-- Flip Card 5 -->
+  <div class="flip-card" onclick="openPopup('card5')">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <h3>🧪 Oil Spill</h3>
+        <p>Clean-up Innovation</p>
+      </div>
+      <div class="flip-card-back">
+        <p>90% Oil Recovery</p>
+      </div>
+    </div>
+  </div>
 
+  <!-- Flip Card 6 -->
+  <div class="flip-card" onclick="openPopup('card6')">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <h3>⚙️ Wire Feeding</h3>
+        <p>Textile Automation</p>
+      </div>
+      <div class="flip-card-back">
+        <p>+35% Productivity</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Flip Card 7 -->
+  <div class="flip-card" onclick="openPopup('card7')">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <h3>🧍 Ergonomics</h3>
+        <p>DHM & Redesign</p>
+      </div>
+      <div class="flip-card-back">
+        <p>-57% Risk Level</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Flip Card 8 -->
+  <div class="flip-card" onclick="openPopup('card8')">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <h3>🍽️ Roti Maker</h3>
+        <p>Self-Cleaning</p>
+      </div>
+      <div class="flip-card-back">
+        <p>Food-safe Design</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Flip Card 9 -->
+  <div class="flip-card" onclick="openPopup('card9')">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <h3>🚗 4W Lifter</h3>
+        <p>Hydraulic System</p>
+      </div>
+      <div class="flip-card-back">
+        <p>2-Ton Capacity</p>
+      </div>
+    </div>
+  </div>
   <!-- Backdrop -->
   <div id="backdrop" class="backdrop" onclick="closePopup()"></div>
 
@@ -166,6 +229,122 @@
         </ul>
         <div class="popup-tags">
           <span>SAE J617</span><span>Gears</span><span>Torque</span><span>Bearings</span><span>Durability</span>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- Popup 5: Oil Spill Separator -->
+  <div id="card5" class="popup-card">
+    <div class="popup-header">
+      <h2>Oil Spill Clean-up Method</h2>
+      <button onclick="closePopup()">&times;</button>
+    </div>
+    <div class="popup-body">
+      <div class="dual-image">
+        <img src="assets/oil_spill_1.jpg" alt="Oil Spill Separator" class="popup-img">
+        <img src="assets/oil_spill_2.jpg" alt="Oil Recovery System" class="popup-img">
+      </div>
+      <div class="popup-info">
+        <ul>
+          <li>Frustum-shaped centrifugal separator with 90% recovery efficiency @ 2800 RPM.</li>
+          <li>Integrated skimmers + floating system handles density up to 1025 kg/m³.</li>
+          <li>Reduced clean-up cost by 30%; modeled in Fusion 360.</li>
+        </ul>
+        <div class="popup-tags">
+          <span>Centrifugal</span><span>Fusion 360</span><span>Oil Recovery</span><span>RPM Control</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Popup 6: Automated Feeding Unit -->
+  <div id="card6" class="popup-card">
+    <div class="popup-header">
+      <h2>Automated Wire Feeding Unit</h2>
+      <button onclick="closePopup()">&times;</button>
+    </div>
+    <div class="popup-body">
+      <img src="assets/wire_feeding.jpg" alt="Wire Feeding System" class="popup-img">
+      <div class="popup-info">
+        <ul>
+          <li>Rotary drum + gear system reduced manual labor by 60%, boosted output 35%.</li>
+          <li>Engineered for synchronized release using precision gear calculations.</li>
+          <li>Enhanced stability via center of gravity analysis.</li>
+        </ul>
+        <div class="popup-tags">
+          <span>Automation</span><span>Gear Train</span><span>Spiral Feed</span><span>Textile</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Popup 7: Ergonomic Assessment DHM -->
+  <div id="card7" class="popup-card">
+    <div class="popup-header">
+      <h2>Ergonomic DHM Study</h2>
+      <button onclick="closePopup()">&times;</button>
+    </div>
+    <div class="popup-body">
+      <div class="dual-image">
+        <img src="assets/ergonomics_1.jpg" alt="DHM Model" class="popup-img">
+        <img src="assets/ergonomics_2.jpg" alt="Workplace Redesign" class="popup-img">
+      </div>
+      <div class="popup-info">
+        <ul>
+          <li>CMDQ + Kinovea data used to model 3D humans in CATIA V5.</li>
+          <li>Applied RULA/OWAS: initial score 7 dropped to 3 post-redesign.</li>
+          <li>New table + lighter hammer cut ergonomic risk by 57%.</li>
+        </ul>
+        <div class="popup-tags">
+          <span>DHM</span><span>Ergonomics</span><span>RULA</span><span>CATIA</span><span>CREO</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Popup 8: Roti Making Machine -->
+  <div id="card8" class="popup-card">
+    <div class="popup-header">
+      <h2>Roti Maker - Self Cleaning</h2>
+      <button onclick="closePopup()">&times;</button>
+    </div>
+    <div class="popup-body">
+      <div class="dual-image">
+        <img src="assets/roti_maker_1.jpg" alt="Roti Machine Design" class="popup-img">
+        <img src="assets/roti_maker_2.jpg" alt="Cleaning Mechanism" class="popup-img">
+      </div>
+      <div class="popup-info">
+        <ul>
+          <li>Pneumatic suction & pyrolytic heating removed dough residue.</li>
+          <li>Fully automated, food-safe, and self-cleaning after every cycle.</li>
+          <li>Reduced downtime and maintenance overhead.</li>
+        </ul>
+        <div class="popup-tags">
+          <span>Mechatronics</span><span>Pyrolysis</span><span>Pneumatics</span><span>Food Safety</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Popup 9: 4W Hydraulic Lifter -->
+  <div id="card9" class="popup-card">
+    <div class="popup-header">
+      <h2>4 Wheeler Hydraulic Lifter</h2>
+      <button onclick="closePopup()">&times;</button>
+    </div>
+    <div class="popup-body">
+      <div class="dual-image">
+        <img src="assets/lifter_1.jpg" alt="Hydraulic Lifter" class="popup-img">
+        <img src="assets/lifter_2.jpg" alt="Stress Simulation" class="popup-img">
+      </div>
+      <div class="popup-info">
+        <ul>
+          <li>2-ton lift, sequencing A+B-B+A- reduced lift time by 30%.</li>
+          <li>DFMA optimized: part count down by 20%, maintenance improved.</li>
+          <li>Used Fusion 360 for stress & displacement analysis: 72.61 MPa, 1.225 mm.</li>
+        </ul>
+        <div class="popup-tags">
+          <span>Hydraulics</span><span>DFMA</span><span>Fusion 360</span><span>Stress Analysis</span>
         </div>
       </div>
     </div>
