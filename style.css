@@ -548,3 +548,108 @@ header {
 * {
   transition: background 0.3s ease, color 0.3s ease;
 }
+
+/* === ADVANCED SKILLS PANEL DESIGN === */
+.skills-dashboard {
+  padding: 100px 20px;
+  background: linear-gradient(to right, #edf4ff, #f7faff);
+}
+
+.dashboard-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 50px;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 12px 30px rgba(0, 71, 171, 0.15);
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 40px;
+}
+
+.dashboard-title {
+  grid-column: span 2;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  color: #003e7e;
+  margin-bottom: 30px;
+}
+
+.skills-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.skill-section {
+  border-left: 4px solid #0047ab;
+  padding-left: 20px;
+}
+
+.skill-section h3 {
+  font-size: 20px;
+  margin-bottom: 12px;
+  color: #0047ab;
+  font-weight: 600;
+}
+
+.skill-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 12px;
+}
+
+.skill-box {
+  background: #f1f7ff;
+  color: #003e7e;
+  padding: 10px 16px;
+  border-radius: 12px;
+  font-size: 13px;
+  font-weight: 500;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.04);
+  transition: transform 0.3s, background 0.3s;
+  cursor: default;
+}
+
+.skill-box:hover {
+  background: #e0edff;
+  transform: scale(1.05);
+}
+
+.metrics-overview {
+  background: #f3faff;
+  border-radius: 14px;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+}
+
+.metric-panel {
+  background: #0047ab;
+  color: #ffffff;
+  padding: 18px 24px;
+  border-radius: 12px;
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 14px rgba(0, 71, 171, 0.25);
+}
+
+.metric-panel:hover {
+  background: #002c5e;
+  transform: translateY(-4px);
+}
+
+.metric-panel h4 {
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.metric-panel p {
+  font-size: 14px;
+  font-weight: 500;
+  opacity: 0.9;
+}
