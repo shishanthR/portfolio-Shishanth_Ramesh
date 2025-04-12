@@ -298,8 +298,8 @@ header {
 }
 
 .compact-img {
-  width: 100%;
-  max-width: 400px; /* reduce from full width */
+  width: 75%;
+  max-width: 250px; /* reduce from full width */
   height: auto;
   object-fit: cover;
   border-radius: 10px;
