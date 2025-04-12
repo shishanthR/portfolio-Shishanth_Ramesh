@@ -1,4 +1,28 @@
-<section class="projects-container creative-grid">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Work</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header>
+    <h1 class="logo">My Portfolio</h1>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="experience.html">Work Experience</a></li>
+        <li><a href="projects.html">My Work</a></li>
+        <li><a href="activities.html">Activities Involved</a></li>
+        <li><a href="contact.html">Connect with Me</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="projects-container creative-grid">
   <!-- Flip Card 1 -->
   <div class="flip-card" onclick="openPopup('card1')">
     <div class="flip-card-inner">
@@ -7,7 +31,7 @@
         <p>Ashok Leyland</p>
       </div>
       <div class="flip-card-back">
-        <p>Click to explore</p>
+        <p>Precision & Lean</p>
       </div>
     </div>
   </div>
@@ -20,7 +44,7 @@
         <p>Ashok Leyland</p>
       </div>
       <div class="flip-card-back">
-        <p>See design impact</p>
+        <p>Accurate Engine Timing</p>
       </div>
     </div>
   </div>
@@ -33,7 +57,7 @@
         <p>Flywheel Housing</p>
       </div>
       <div class="flip-card-back">
-        <p>Topology optimized lifting</p>
+        <p>FEA + Topology</p>
       </div>
     </div>
   </div>
@@ -46,7 +70,7 @@
         <p>Flywheel | SAE 1</p>
       </div>
       <div class="flip-card-back">
-        <p>30% torque gain</p>
+        <p>Torque & Reliability</p>
       </div>
     </div>
   </div>
@@ -54,11 +78,50 @@
   <!-- Backdrop -->
   <div id="backdrop" class="backdrop" onclick="closePopup()"></div>
 
-  <!-- Popup 1: CNC Pivot Fixture -->
-  <!-- ... existing card1 ... -->
+  <!-- Popup 1: CNC Fixture -->
+  <div id="card1" class="popup-card">
+    <div class="popup-header">
+      <h2>CNC Pivot Fixture</h2>
+      <button onclick="closePopup()">&times;</button>
+    </div>
+    <div class="popup-body">
+      <img src="assets/pivot_fixture.jpg" alt="CNC Fixture" class="popup-img">
+      <div class="popup-info">
+        <ul>
+          <li>Designed multi-angle fixture to handle thermostat housings with higher flexibility.</li>
+          <li>Applied SMED principles to reduce setup time by <strong>75%</strong> (12 → 3 minutes).</li>
+          <li>Developed SOPs and validated via production line tests.</li>
+        </ul>
+        <div class="popup-tags">
+          <span>SMED</span><span>3D CAD</span><span>Manufacturing</span><span>Process Optimization</span>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- Popup 2: TDC Fixture -->
-  <!-- ... existing card2 ... -->
+  <div id="card2" class="popup-card">
+    <div class="popup-header">
+      <h2>TDC Marking Fixture</h2>
+      <button onclick="closePopup()">&times;</button>
+    </div>
+    <div class="popup-body">
+      <div class="dual-image">
+        <img src="assets/tdc_fixture_3d.jpg" alt="TDC 3D CAD" class="popup-img">
+        <img src="assets/tdc_fixture_2d.jpg" alt="TDC GD&T Drawing" class="popup-img">
+      </div>
+      <div class="popup-info">
+        <ul>
+          <li>Engineered bore-centered circular fixture for accurate TDC alignment on flywheel.</li>
+          <li>Created 2D drawing with GD&T ensuring consistent marking during engine assembly.</li>
+          <li>Improved operational accuracy & reduced variability across production lines.</li>
+        </ul>
+        <div class="popup-tags">
+          <span>3D CAD</span><span>GD&T</span><span>Tool Design</span><span>Repeatability</span>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- Popup 3: Lifting Tackle -->
   <div id="card3" class="popup-card">
@@ -68,18 +131,17 @@
     </div>
     <div class="popup-body">
       <div class="dual-image">
-        <img src="assets/lifting_tackle_1.jpg" alt="Lifting Tackle CAD" class="popup-img">
-        <img src="assets/lifting_tackle_2.jpg" alt="FEA Simulation" class="popup-img">
+        <img src="assets/lifting_tackle_1.jpg" alt="Lifting Tackle Design" class="popup-img">
+        <img src="assets/lifting_tackle_2.jpg" alt="Lifting Tackle FEA" class="popup-img">
       </div>
       <div class="popup-info">
         <ul>
-          <li><strong>Optimization:</strong> 20% weight reduction via topology optimization</li>
-          <li><strong>Load:</strong> Supports 500kg with safety factor of 2.5</li>
-          <li><strong>Simulation:</strong> FEA confirmed 30% stress reduction</li>
-          <li><strong>Compliance:</strong> ISO 12100 safety certified for production lines</li>
+          <li>Topology optimization for 20% weight savings while maintaining 500kg load capacity.</li>
+          <li>Performed FEA simulations (Safety Factor: 2.5) and reduced stress by 30%.</li>
+          <li>Compliant with ISO 12100 standards for lifting equipment in manufacturing environments.</li>
         </ul>
         <div class="popup-tags">
-          <span>FEA</span><span>Topology</span><span>500kg Load</span><span>Safety Factor</span><span>ISO 12100</span>
+          <span>FEA</span><span>Optimization</span><span>500kg</span><span>ISO 12100</span>
         </div>
       </div>
     </div>
@@ -94,17 +156,16 @@
     <div class="popup-body">
       <div class="dual-image">
         <img src="assets/rotating_tool_1.jpg" alt="Rotating Tool CAD" class="popup-img">
-        <img src="assets/rotating_tool_2.jpg" alt="Gear & Bearing Design" class="popup-img">
+        <img src="assets/rotating_tool_2.jpg" alt="Rotating Tool Gear" class="popup-img">
       </div>
       <div class="popup-info">
         <ul>
-          <li><strong>Design:</strong> Gear shaft inside high-strength alloy casing</li>
-          <li><strong>Support:</strong> Dual ball bearings (ISO 492, ABEC 5)</li>
-          <li><strong>Efficiency:</strong> Improved torque by 30%, lifespan by 40%</li>
-          <li><strong>Standard:</strong> SAE J617 compliant with marine engine mounts</li>
+          <li>Designed SAE 1 compliant rotating tool for marine/truck engines.</li>
+          <li>High-strength alloy housing with gear shaft & ABEC 5 ball bearings.</li>
+          <li>Enhanced torque efficiency by 30%, lifespan by 40%.</li>
         </ul>
         <div class="popup-tags">
-          <span>Gear Design</span><span>Ball Bearings</span><span>Torque</span><span>Durability</span><span>SAE J617</span>
+          <span>SAE J617</span><span>Gears</span><span>Torque</span><span>Bearings</span><span>Durability</span>
         </div>
       </div>
     </div>
@@ -121,3 +182,6 @@
     document.getElementById('backdrop').classList.remove('active');
   }
 </script>
+
+</body>
+</html>
