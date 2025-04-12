@@ -656,3 +656,75 @@ header {
 html {
   scroll-behavior: smooth;
 }
+/* === ACTIVITIES SECTION === */
+.activities-section {
+  padding: 100px 20px;
+  background: linear-gradient(to right, #fcfcfc, #f4f9ff);
+}
+
+.activities-container {
+  max-width: 1100px;
+  margin: auto;
+  text-align: center;
+}
+
+.activities-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #0047ab;
+  margin-bottom: 50px;
+}
+
+.activity-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  position: relative;
+}
+
+.activity-card {
+  position: relative;
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 40px 30px;
+  box-shadow: 0 12px 24px rgba(0, 71, 171, 0.15);
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  isolation: isolate;
+}
+
+.activity-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 71, 171, 0.25);
+}
+
+.activity-overlay {
+  content: "";
+  position: absolute;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(0, 71, 171, 0.08), rgba(0, 71, 171, 0.15));
+  z-index: -1;
+  transition: top 0.4s ease-in-out;
+  border-radius: 18px;
+}
+
+.activity-card:hover .activity-overlay {
+  top: 0;
+}
+
+.activity-content h3 {
+  font-size: 20px;
+  color: #0047ab;
+  margin-bottom: 10px;
+}
+
+.activity-content p {
+  font-size: 14px;
+  color: #333;
+  line-height: 1.6;
+  font-weight: 500;
+}
